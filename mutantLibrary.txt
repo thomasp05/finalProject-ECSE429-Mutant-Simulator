@@ -6,5 +6,5 @@
 13: -, +, *, /, 
 Number of mutants of type + : 3
 Number of mutants of type - : 5
-Number of mutants of type * : 5
-Number of mutants of type / : 5
+Number of mutants of type * : 6
+Number of mutants of type / : 6
