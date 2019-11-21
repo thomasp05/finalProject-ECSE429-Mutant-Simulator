@@ -1,0 +1,10 @@
+9: +, -, *, /, 
+9: +, -, *, /, 
+9: +, -, *, /, 
+10: *, +, -, /, 
+11: /, +, -, *, 
+12: -, +, *, /, 
+Number of mutants of type + : 3
+Number of mutants of type - : 5
+Number of mutants of type * : 5
+Number of mutants of type / : 5
