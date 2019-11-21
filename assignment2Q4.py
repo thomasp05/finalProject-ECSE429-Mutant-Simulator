@@ -10,7 +10,7 @@ opList = []
 mutants = "+-*/"
 
 #Provide the path of the SUT and mutant library
-sutPath = 'sut.txt'
+sutPath = 'sut.py'
 mutantLibraryPath = 'mutantLibrary.txt'
 
 #create a folder in the directory of this python script where the SUT with injected mutants will be saved 
@@ -58,7 +58,7 @@ for line in mutantLibrary:
     mutantCounter = 0
     for operator in mutantList:
         #make a copy of the SUT 
-        newProgramPath ='sutFolder/'+ str(libraryLineNumber)+ "_"+str(mutantCounter)+'test.txt' 
+        newProgramPath ='sutFolder/'+ str(libraryLineNumber)+ "_" +str(mutantCounter)+'test.py'
         newProgram = open(newProgramPath, "w")
 
         #open the orriginal SUT
