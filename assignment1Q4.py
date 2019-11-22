@@ -25,8 +25,7 @@ for line in sut:
             output.write("\n")
             
         else: 
-            lineHistory = lineHistory+ char
-            print(lineHistory)
+            lineHistory = lineHistory + char
 
 #Print the information about the total number of mutants of each type
 output.write("Number of mutants of type + : " + str(nbMutant[0]) + "\n")

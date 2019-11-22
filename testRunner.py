@@ -13,28 +13,22 @@ from subprocess import PIPE
 def testRunnnerMethod(filePath, testNumber):
 
     # This code will run the specified SUT
-    testVectors = [["1","2"], ["2","3"], ["a","3"], ["-1", "33"]]
-    expectedValues = [12.5, 11, None, 45.5]
+    testVectors = ["1 2 3 4 5 6 7 8 9 10 10", "1 2 3 5", "a b c 5", "5 6 2 4 3 3"]
+    expectedValues = [10, -1, -1, -1]
 
     for i in range(len(testVectors)):
         testVector = testVectors[i]
         expectedValue = expectedValues[i]
         try:
             #os.system(filePath + " " +  testVector[0] + " " + testVector[1])
-            cmd = filePath + " " +  testVector[0] + " " + testVector[1]
-            returnValue = subprocess.Popen(cmd, shell=True, stdout=PIPE, stderr=PIPE)
+            cmd = "python ." + filePath + " " +  testVector
+            returnValue = subprocess.Popen(cmd, shell=True, stdout=PIPE, stderr=PIPE, timeout=2)
             out, err = returnValue.communicate()
-            if(expectedValue is None):
-                try:
-                    val = int(out)
-                    return testNumber, True, testVector
-                except:
-                    # This is expected behavior
-                    pass
-            elif(not (float(out) == expectedValue)):
+            if(not (float(out) == expectedValue)):
                 return testNumber, True, testVector
         except Exception as e:
             return testNumber, True, testVector 
     
     # If no mutants are detected, return false
     return testNumber, False, None 
+    
