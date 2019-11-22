@@ -35,10 +35,11 @@ def binarySearch (arr, l, r, x):
 
 
 def sutProgram():
-    if(len(sys.argv) < 13 ):
+    if(len(sys.argv) != 13 ):
         print("\nThis program takes a list of integer arguments seperated by white spaces: \n" +
            "\n\tExample command: python sut.py 2 2 3 5 6 7 10 12 18 88 9")
         print("-1")
+        exit()
     else:
         # Parse to make sure arguments are integers
         for i in range(1, len(sys.argv)):

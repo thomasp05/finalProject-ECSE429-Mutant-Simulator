@@ -25,10 +25,10 @@ def testRunnnerMethod(filePath, testNumber):
             returnValue = subprocess.Popen(cmd, shell=True, stdout=PIPE, stderr=PIPE, timeout=2)
             out, err = returnValue.communicate()
             if(not (float(out) == expectedValue)):
-                return testNumber, True, testVector
+                return testNumber, True, testVector, filePath
         except Exception as e:
-            return testNumber, True, testVector 
+            return testNumber, True, testVector, filePath
     
     # If no mutants are detected, return false
-    return testNumber, False, None 
+    return testNumber, False, None, filePath
     

@@ -15,10 +15,10 @@ def main():
             success = testRunnnerMethod(path + fileNameList[i], i+1)
             if(success[1]):
                 # Handle success
-                print(str(success[0]) + ", " + str(success[1]) + ", " + success[2]+" in " + fileNameList[i])
+                print(str(success[0]) + ", " + str(success[1]) + ", " + success[2]+" in " + success[3])
             else:
                 # Handle failure
-                print(str(success[0]) + ", " + str(success[1]) + ", " + success[2]+" in " + fileNameList[i])
+                print(str(success[0]) + ", " + str(success[1]) + ", " + success[2]+" in " + success[3])
         except Exception as e:
             print(str(e))
 
