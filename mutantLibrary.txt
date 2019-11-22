@@ -1,10 +1,16 @@
-10: +, -, *, /, 
-10: +, -, *, /, 
-10: +, -, *, /, 
-11: *, +, -, /, 
-12: /, +, -, *, 
-13: -, +, *, /, 
-Number of mutants of type + : 3
-Number of mutants of type - : 5
-Number of mutants of type * : 6
-Number of mutants of type / : 6
+17: +, -, *, /, 
+17: -, +, *, /, 
+17: /, +, -, *, 
+26: -, +, *, /, 
+30: +, -, *, /, 
+34: -, +, *, /, 
+58: -, +, *, /, 
+59: -, +, *, /, 
+60: -, +, *, /, 
+66: -, +, *, /, 
+68: +, -, *, /, 
+70: -, +, *, /, 
+Number of mutants of type + : 9
+Number of mutants of type - : 4
+Number of mutants of type * : 12
+Number of mutants of type / : 11
