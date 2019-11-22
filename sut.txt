@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main()
+{
+	#print("this is a test" + "this is the rest of the test");
+	int a = 3; 
+ 	int b = 4; 
+ 	int c; 
+
+  	c = (a + b) + 2 +3;
+	c = a*b; 
+	c = a/b;
+	c = a-b; 
+  	return c;
+}

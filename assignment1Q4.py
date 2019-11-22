@@ -11,8 +11,9 @@ lineCounter = 0 #line number
 
 for line in sut:
     lineCounter = lineCounter + 1
+    lineHistory = "" #string used to keep an history of what is on the line so we can avoid comments
     for char in line:
-        if char =='+' or char =='-' or char =='*' or char =='/':
+        if (not "#" in lineHistory) and(char =='+' or char =='-' or char =='*' or char =='/'):
             lineNumber = str(lineCounter)
             output.write( lineNumber + ": " + str(char) +  ", ")
             for i in mutantList:
@@ -21,6 +22,9 @@ for line in sut:
                     j = mutantList.index(i) 
                     nbMutant[j] = nbMutant[j] +1 
             output.write("\n")
+            
+        else: 
+            lineHistory = lineHistory+ char
 
 #Print the information about the total number of mutants of each type
 output.write("Number of mutants of type + : " + str(nbMutant[0]) + "\n")
