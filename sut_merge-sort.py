@@ -49,9 +49,6 @@ def sutProgram():
                 #print("Argument is not an integer. Please enter an integer and try again")
                 print("-1")
         
-    # a = int(sys.argv[1])
-    # b = int(sys.argv[2])
-
     myList = []
     for item in sys.argv[1:]: 
         myList.append(int(item))

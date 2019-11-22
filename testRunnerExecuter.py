@@ -19,38 +19,42 @@ def main():
     path = ("/sutFolder/")
     fileNameList = [f for f in listdir(currLocation + path) if isfile(join(currLocation + path, f))]
    
-    pool = mp.Pool(mp.cpu_count())
-    start_time = time.time()
+    pool = mp.Pool(mp.cpu_count()) #gunna assign the number of processes depennding on the number available on the computer
+    start_time = time.time() #start the timer for computing the elapsed time
 
     success = testRunnnerMethod("/sut_merge-sort.py", 0)
     print(str(success[0]) + ", " + str(success[1]) + ", " + success[2]+" in " + str(success[3]))
 
     for i in range(len(fileNameList)):
         try:
-            success = testRunnnerMethod(path + fileNameList[i], i+1)
-            if(success[1]):
-                # Handle success
-                print(str(success[0]) + ", " + str(success[1]) + ", " + success[2]+" in " + str(success[3]))
-            else:
-                # Handle failure
-                print(str(success[0]) + ", " + str(success[1]) + ", " + success[2]+" in " + str(success[3]))
+
+            #thats the function call to execute the loop in parallel
+            pool.apply_async(testRunnnerMethod, args=(path + fileNameList[i], i+1),callback=collect_result )
+
+            #uncomment the following code if you dont want to execute the loop in parallel
+            # success = testRunnnerMethod(path + fileNameList[i], i+1)
+            # if(success[1]):
+            #     # Handle success
+            #     print(str(success[0]) + ", " + str(success[1]) + ", " + success[2]+" in " + str(success[3]))
+            # else:
+            #     # Handle failure
+            #     print(str(success[0]) + ", " + str(success[1]) + ", " + success[2]+" in " + str(success[3]))
         except Exception as e:
             print(str(e))
     
-    
-    elapsed_time = time.time() - start_time
+    pool.close() #close the pool
+    pool.join()  #wait until all processes are done
+    elapsed_time = time.time() - start_time #stop the timer and compute the elapsed time 
+
+    #print the results
+    for item in results:
+        print(item)
+
+    #print elapsed time 
     print(elapsed_time)
 
     print("done")
 
 if __name__ == '__main__':
-    # start_time = time.time()
-    # pool = mp.Pool(12)
-    # pool.apply_async(main())
+    
     main()
-    time.sleep(2)
-    print(results)
-    # elapsed_time = time.time() - start_time
-   
-    # print(elapsed_time)
-    #main()
