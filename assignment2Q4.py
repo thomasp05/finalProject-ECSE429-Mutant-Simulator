@@ -10,7 +10,7 @@ opList = []
 mutants = "+-*/"
 
 #Provide the path of the SUT and mutant library
-sutPath = 'sut.py'
+sutPath = 'sut_merge-sort.py'
 mutantLibraryPath = 'mutantLibrary.txt'
 
 #create a folder in the directory of this python script where the SUT with injected mutants will be saved 
