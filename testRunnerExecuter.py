@@ -22,16 +22,18 @@ def main():
     pool = mp.Pool(mp.cpu_count())
     start_time = time.time()
 
+    success = testRunnnerMethod("/sut_merge-sort.py", 0)
+    print(str(success[0]) + ", " + str(success[1]) + ", " + success[2]+" in " + str(success[3]))
+
     for i in range(len(fileNameList)):
         try:
-            pool.apply_async(testRunnnerMethod, args=(path + fileNameList[i], i+1),callback=collect_result )
-            # success = testRunnnerMethod(path + fileNameList[i], i+1)
-            # if(success[1]):
-            #     # Handle success
-            #     print(str(success[0]) + ", " + str(success[1]) + ", " + success[2]+" in " + success[3])
-            # else:
-            #     # Handle failure
-            #     print(str(success[0]) + ", " + str(success[1]) + ", " + success[2]+" in " + success[3])
+            success = testRunnnerMethod(path + fileNameList[i], i+1)
+            if(success[1]):
+                # Handle success
+                print(str(success[0]) + ", " + str(success[1]) + ", " + success[2]+" in " + str(success[3]))
+            else:
+                # Handle failure
+                print(str(success[0]) + ", " + str(success[1]) + ", " + success[2]+" in " + str(success[3]))
         except Exception as e:
             print(str(e))
     
