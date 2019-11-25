@@ -1,0 +1,37 @@
+Mutant Number        Line Number          Original Operator    Mutant Operator      Name of Mutant Test File       Mutant Killed (Y/N)  Test Vector                   
+1                    17                   +                    -                    1_0test.py                    True                 10 9 8 7 6 5 4 3 2 1 1         
+2                    17                   +                    *                    1_1test.py                    True                 1 2 3 4 5 6 7 8 9 10 5         
+3                    17                   +                    /                    1_2test.py                    True                 10 9 8 7 6 5 4 3 2 1 1         
+4                    17                   -                    +                    2_0test.py                    True                 10 9 8 7 6 5 4 3 2 1 1         
+5                    17                   -                    *                    2_1test.py                    True                 10 9 8 7 6 5 4 3 2 1 1         
+6                    17                   -                    /                    2_2test.py                    True                 10 9 8 7 6 5 4 3 2 1 1         
+7                    17                   /                    +                    3_0test.py                    True                 10 9 8 7 6 5 4 3 2 1 1         
+8                    17                   /                    -                    3_1test.py                    True                 0 1 2 3 4 5 6 7 8 0            
+9                    17                   /                    *                    3_2test.py                    True                 0 1 2 3 4 5 6 7 8 0            
+10                   26                   -                    +                    4_0test.py                    True                 1 2 3 4 5 6 7 8 9 10 1         
+11                   26                   -                    *                    4_1test.py                    True                 1 2 3 4 5 6 7 8 9 10 5         
+12                   26                   -                    /                    4_2test.py                    True                 1 2 3 4 5 6 7 8 9 10 5         
+13                   30                   +                    -                    5_0test.py                    True                 1 2 3 4 5 6 7 8 9 10 5         
+14                   30                   +                    *                    5_1test.py                    True                 1 2 3 4 5 6 7 8 9 10 5         
+15                   30                   +                    /                    5_2test.py                    True                 1 2 3 4 5 6 7 8 9 10 1         
+16                   34                   -                    +                    6_0test.py                    True                 1 2 3 4 5 6 7 8 9 10 1         
+17                   34                   -                    *                    6_1test.py                    True                 1 2 3 4 5 6 7 8 9 10 1         
+18                   34                   -                    /                    6_2test.py                    True                 1 2 3 4 5 6 7 8 9 10 1         
+19                   56                   -                    +                    7_0test.py                    True                 1 2 3 4 5 6 7 8 9 10 1         
+20                   56                   -                    *                    7_1test.py                    True                 1 2 3 4 5 6 7 8 9 10 5         
+21                   56                   -                    /                    7_2test.py                    True                 1 2 3 4 5 6 7 8 9 10 5         
+22                   57                   -                    +                    8_0test.py                    True                 1 2 3 4 5 6 7 8 9 10 5         
+23                   57                   -                    *                    8_1test.py                    True                 1 2 3 4 5 6 7 8 9 10 5         
+24                   57                   -                    /                    8_2test.py                    True                 1 2 3 4 5 6 7 8 9 10 5         
+25                   58                   -                    +                    9_0test.py                    True                 1 2 3 4 5 6 7 8 9 10 5         
+26                   58                   -                    *                    9_1test.py                    True                 0 1 2 3 4 5 6 7 8 0            
+27                   58                   -                    /                    9_2test.py                    True                 0 1 2 3 4 5 6 7 8 0            
+28                   64                   -                    +                    10_0test.py                   True                 10 9 8 7 6 5 4 3 2 1 1         
+29                   64                   -                    *                    10_1test.py                   True                 0 1 2 3 4 5 6 7 8 0            
+30                   64                   -                    /                    10_2test.py                   True                 0 1 2 3 4 5 6 7 8 0            
+31                   66                   +                    -                    11_0test.py                   True                 1 2 3 4 5 6 7 8 9 10 5         
+32                   66                   +                    *                    11_1test.py                   True                 0 1 2 3 4 5 6 7 8 0            
+33                   66                   +                    /                    11_2test.py                   True                 0 1 2 3 4 5 6 7 8 0            
+34                   68                   -                    +                    12_0test.py                   True                 1 2 3 4 5 6 7 8 9 10 1         
+35                   68                   -                    *                    12_1test.py                   True                 0 1 2 3 4 5 6 7 8 0            
+36                   68                   -                    /                    12_2test.py                   True                 0 1 2 3 4 5 6 7 8 0            
