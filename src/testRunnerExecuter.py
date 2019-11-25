@@ -1,8 +1,7 @@
-import sys
 import os
 from os import listdir
 from os.path import isfile, join
-from testRunner import testRunnnerMethod
+from src.testRunner import testRunnnerMethod
 import multiprocessing as mp
 import time 
 
@@ -22,7 +21,7 @@ def main():
     pool = mp.Pool(mp.cpu_count()) #gunna assign the number of processes depennding on the number available on the computer
     start_time = time.time() #start the timer for computing the elapsed time
 
-    #success = testRunnnerMethod("/sut_merge-sort.py", 0)
+    #success = testRunnnerMethod("/sut_binary-search.py", 0)
     #print(str(success[0]) + ", " + str(success[1]) + ", " + success[2]+" in " + str(success[3]))
 
     for i in range(len(fileNameList)):

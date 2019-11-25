@@ -10,7 +10,7 @@ opList = []
 mutants = "+-*/"
 
 #Provide the path of the SUT and mutant library
-sutPath = 'sut_merge-sort.py'
+sutPath = 'sut_binary-search.py'
 mutantLibraryPath = 'mutantLibrary.txt'
 
 #Create a file to display the output information after performing the mutant simulation 
