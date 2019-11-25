@@ -22,8 +22,8 @@ def main():
     pool = mp.Pool(mp.cpu_count()) #gunna assign the number of processes depennding on the number available on the computer
     start_time = time.time() #start the timer for computing the elapsed time
 
-    #success = testRunnnerMethod("/sut_merge-sort.py", 0)
-    #print(str(success[0]) + ", " + str(success[1]) + ", " + success[2]+" in " + str(success[3]))
+    # success = testRunnnerMethod("/src/sut_binarySearch.py", 0)
+    # print(str(success[0]) + ", " + str(success[1]) + ", " + success[2]+" in " + str(success[3]))
 
     for i in range(len(fileNameList)):
         try:
@@ -56,13 +56,20 @@ def main():
     results.sort()
 
     lineNb = 1
+    nbOfMutantsKilled = 0
     for item in results:
+        if item[1] == True: 
+            nbOfMutantsKilled = nbOfMutantsKilled +1
         lines[lineNb] = lines[lineNb][:-1] + "{:20s} {:30s} ".format(str(item[1]), str(item[2])) + "\n"
         lineNb = lineNb +1
     
     #Overwrite the content of results.txt with the updated table
     with open('results.txt', 'w') as file:
         file.writelines(lines)
+
+        #compute the mutant coverage and write it to the results file
+        coverage = nbOfMutantsKilled/(lineNb-1)*100
+        file.write("Mutant Coverage: "+ str(coverage)+" %")
 
     #Mutant simulation is done
     print("done")

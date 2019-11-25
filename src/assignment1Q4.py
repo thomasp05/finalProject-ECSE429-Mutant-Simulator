@@ -6,7 +6,7 @@ __email__ = "thomas.philippon@mail.mcgill.ca"
 mutantList = ["+", "-", "*", "/"] #list of possible mutants
 nbMutant = [0,0,0,0]  #list containing the total number of mutants for each type
 output = open("mutantLibrary.txt", "w") #Output file containing the information about the mutants
-sut = open("sut_merge-sort.py") #Software Under Test.
+sut = open("sut_binarySearch.py") #Software Under Test.
 lineCounter = 0 #line number
 
 for line in sut:

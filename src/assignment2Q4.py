@@ -10,12 +10,12 @@ opList = []
 mutants = "+-*/"
 
 #Provide the path of the SUT and mutant library
-sutPath = 'sut_merge-sort.py'
+sutPath = 'sut_binarySearch.py'
 mutantLibraryPath = 'mutantLibrary.txt'
 
 #Create a file to display the output information after performing the mutant simulation 
 resultsFile = open("Results.txt", "w") #Output file containing the information about the mutants
-resultsFile.write(("{:20s} {:20s} {:20s} {:20s} {:30s} {:20s} {:30s}".format("Mutant Number", "Line Number", "Original Operator", "Mutant Operator", "Name of Mutant Test File", "Mutant Killed (Y/N)", "Test Vector")))
+resultsFile.write(("{:20s} {:20s} {:20s} {:20s} {:30s} {:20s} {:30s}".format("Mutant Number", "Line Number", "Original Operator", "Mutant Operator", "Name of Mutant Test File", "Mutant Killed (T/F)", "Test Vector")))
 resultsFile.write("\n")
 
 #create a folder in the directory of this python script where the SUT with injected mutants will be saved 

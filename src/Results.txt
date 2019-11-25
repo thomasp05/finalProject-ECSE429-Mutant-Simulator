@@ -1,6 +1,6 @@
-Mutant Number        Line Number          Original Operator    Mutant Operator      Name of Mutant Test File       Mutant Killed (Y/N)  Test Vector                   
+Mutant Number        Line Number          Original Operator    Mutant Operator      Name of Mutant Test File       Mutant Killed (T/F)  Test Vector                   
 1                    17                   +                    -                    1_0test.py                    True                 10 9 8 7 6 5 4 3 2 1 1         
-2                    17                   +                    *                    1_1test.py                    True                 1 2 3 4 5 6 7 8 9 10 5         
+2                    17                   +                    *                    1_1test.py                    False                                               
 3                    17                   +                    /                    1_2test.py                    True                 10 9 8 7 6 5 4 3 2 1 1         
 4                    17                   -                    +                    2_0test.py                    True                 10 9 8 7 6 5 4 3 2 1 1         
 5                    17                   -                    *                    2_1test.py                    True                 10 9 8 7 6 5 4 3 2 1 1         
@@ -9,7 +9,7 @@ Mutant Number        Line Number          Original Operator    Mutant Operator  
 8                    17                   /                    -                    3_1test.py                    True                 0 1 2 3 4 5 6 7 8 0            
 9                    17                   /                    *                    3_2test.py                    True                 0 1 2 3 4 5 6 7 8 0            
 10                   26                   -                    +                    4_0test.py                    True                 1 2 3 4 5 6 7 8 9 10 1         
-11                   26                   -                    *                    4_1test.py                    True                 1 2 3 4 5 6 7 8 9 10 5         
+11                   26                   -                    *                    4_1test.py                    True                 1 2 3 4 5 6 7 8 9 10 6         
 12                   26                   -                    /                    4_2test.py                    True                 1 2 3 4 5 6 7 8 9 10 5         
 13                   30                   +                    -                    5_0test.py                    True                 1 2 3 4 5 6 7 8 9 10 5         
 14                   30                   +                    *                    5_1test.py                    True                 1 2 3 4 5 6 7 8 9 10 5         
@@ -18,12 +18,12 @@ Mutant Number        Line Number          Original Operator    Mutant Operator  
 17                   34                   -                    *                    6_1test.py                    True                 1 2 3 4 5 6 7 8 9 10 1         
 18                   34                   -                    /                    6_2test.py                    True                 1 2 3 4 5 6 7 8 9 10 1         
 19                   56                   -                    +                    7_0test.py                    True                 1 2 3 4 5 6 7 8 9 10 1         
-20                   56                   -                    *                    7_1test.py                    True                 1 2 3 4 5 6 7 8 9 10 5         
-21                   56                   -                    /                    7_2test.py                    True                 1 2 3 4 5 6 7 8 9 10 5         
+20                   56                   -                    *                    7_1test.py                    False                                               
+21                   56                   -                    /                    7_2test.py                    False                                               
 22                   57                   -                    +                    8_0test.py                    True                 1 2 3 4 5 6 7 8 9 10 5         
 23                   57                   -                    *                    8_1test.py                    True                 1 2 3 4 5 6 7 8 9 10 5         
 24                   57                   -                    /                    8_2test.py                    True                 1 2 3 4 5 6 7 8 9 10 5         
-25                   58                   -                    +                    9_0test.py                    True                 1 2 3 4 5 6 7 8 9 10 5         
+25                   58                   -                    +                    9_0test.py                    False                                               
 26                   58                   -                    *                    9_1test.py                    True                 0 1 2 3 4 5 6 7 8 0            
 27                   58                   -                    /                    9_2test.py                    True                 0 1 2 3 4 5 6 7 8 0            
 28                   64                   -                    +                    10_0test.py                   True                 10 9 8 7 6 5 4 3 2 1 1         
@@ -35,3 +35,4 @@ Mutant Number        Line Number          Original Operator    Mutant Operator  
 34                   68                   -                    +                    12_0test.py                   True                 1 2 3 4 5 6 7 8 9 10 1         
 35                   68                   -                    *                    12_1test.py                   True                 0 1 2 3 4 5 6 7 8 0            
 36                   68                   -                    /                    12_2test.py                   True                 0 1 2 3 4 5 6 7 8 0            
+Mutant Coverage: 88.88888888888889 %
