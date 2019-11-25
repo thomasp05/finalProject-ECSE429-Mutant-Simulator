@@ -13,6 +13,11 @@ mutants = "+-*/"
 sutPath = 'sut_merge-sort.py'
 mutantLibraryPath = 'mutantLibrary.txt'
 
+#Create a file to display the output information after performing the mutant simulation 
+resultsFile = open("Results.txt", "w") #Output file containing the information about the mutants
+resultsFile.write(("{:20s} {:20s} {:20s} {:20s} {:30s} {:20s} {:30s}".format("Mutant Number", "Line Number", "Original Operator", "Mutant Operator", "Name of Mutant Test File", "Mutant Killed (Y/N)", "Test Vector")))
+resultsFile.write("\n")
+
 #create a folder in the directory of this python script where the SUT with injected mutants will be saved 
 if not os.path.exists('sutFolder'):
     os.mkdir('sutFolder')
@@ -27,6 +32,7 @@ opratorLineCount = 0
 
 #iterate through each line of the mutant library 
 libraryLineNumber = 0 #line number
+totalMutantCounter = 1
 for line in mutantLibrary:
     libraryLineNumber = libraryLineNumber + 1
 
@@ -59,6 +65,7 @@ for line in mutantLibrary:
     for operator in mutantList:
         #make a copy of the SUT 
         newProgramPath ='sutFolder/'+ str(libraryLineNumber)+ "_" +str(mutantCounter)+'test.py'
+        mutantFilePath = str(libraryLineNumber)+ "_" +str(mutantCounter)+'test.py'
         newProgram = open(newProgramPath, "w")
 
         #open the orriginal SUT
@@ -75,8 +82,15 @@ for line in mutantLibrary:
                 mutantLine[mutantIndex] = mutantList[mutantCounter]
                 mutantLine =  ''.join([str(string) for string in mutantLine])
                 newProgram.write(mutantLine)
+                # resultsFile.write( str(totalMutantCounter) + ": " + str(libraryLineNumber) +  ", " + str(mutantList[mutantCounter]) + "\n")
+                resultsFile.write(("{:20s} {:20s} {:20s} {:20s} {:30s}".format(str(totalMutantCounter), str(sutLineNumber), str(originalOperator),  str(mutantList[mutantCounter]), str(mutantFilePath))))
+                resultsFile.write("\n")
+                totalMutantCounter = totalMutantCounter +1
             else: 
                 newProgram.write(mutantLine)
+
+           
+
         newProgram.close
         mutantCounter = mutantCounter +1
 
