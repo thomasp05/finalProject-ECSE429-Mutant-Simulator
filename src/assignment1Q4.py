@@ -1,7 +1,3 @@
-__author__ = "Thomas Philippon"
-__ID__ = "260747645"
-__email__ = "thomas.philippon@mail.mcgill.ca"
-
 
 mutantList = ["+", "-", "*", "/"] #list of possible mutants
 nbMutant = [0,0,0,0]  #list containing the total number of mutants for each type

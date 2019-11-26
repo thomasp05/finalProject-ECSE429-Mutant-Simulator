@@ -1,6 +1,3 @@
-__author__ = "Thomas Philippon"
-__ID__ = "260747645"
-__email__ = "thomas.philippon@mail.mcgill.ca"
 
 import os
 from shutil import copyfile
