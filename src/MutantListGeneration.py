@@ -10,7 +10,7 @@ for line in sut:
     lineHistory = "" #string used to keep an history of what is on the line so we can avoid comments
     for char in line:
         
-        if (not(("print" in lineHistory) or ("#" in lineHistory))) and (char =='+' or char =='-' or char =='*' or char =='/'):
+        if (not(("print" in lineHistory) or ("#" in lineHistory)))  and (char =='+' or char =='-' or char =='*' or char =='/'):
             lineNumber = str(lineCounter)
             output.write( lineNumber + ": " + str(char) +  ", ")
             for i in mutantList:

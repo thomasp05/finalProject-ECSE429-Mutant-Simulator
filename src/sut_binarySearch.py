@@ -15,7 +15,6 @@ def binarySearch (arr, l, r, x):
     if r >= l: 
   
         mid = int(l + (r - l)/2)
-
         # If element is present at the middle itself 
         if arr[mid] == x: 
             return mid 
@@ -38,8 +37,9 @@ def sutProgram():
     if(len(sys.argv) != 12 ):
         #print("\nThis program takes a list of integer arguments seperated by white spaces: \n" +
         #   "\n\tExample command: python sut.py 2 2 3 5 6 7 10 12 18 88 9")
-        print("-1")
-        exit()
+        # print("-1")
+        # exit()
+        return -1
     else:
         # Parse to make sure arguments are integers
         for i in range(1, len(sys.argv)):
@@ -47,7 +47,8 @@ def sutProgram():
                 arg = int(sys.argv[i])
             except ValueError:
                 #print("Argument is not an integer. Please enter an integer and try again")
-                print("-1")
+                #print("-1")
+                return -1
         
     myList = []
     for item in sys.argv[1:]: 
@@ -56,6 +57,10 @@ def sutProgram():
     arr = myList[:-1]
     r = len(myList[:-1])
     x = myList[-1]
+
+    #Check if the element we are looking for is within the range of the list 
+    if not(x >= arr[0] and x <= arr[-1]):
+        return -1
 
     #check if array is sorted and call binary search if it is. Return -1 if it is not 
     flag = 0

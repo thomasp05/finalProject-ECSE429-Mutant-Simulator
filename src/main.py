@@ -1,5 +1,5 @@
 import os
 
-os.system("assignment1Q4.py")
-os.system("assignment2Q4.py")
+os.system("MutantListGeneration.py")
+os.system("MutantInjection.py")
 os.system("testRunnerExecuter.py")

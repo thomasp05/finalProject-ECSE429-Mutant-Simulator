@@ -1,38 +1,50 @@
 Mutant Number        Line Number          Original Operator    Mutant Operator      Name of Mutant Test File       Mutant Killed (T/F)  Test Vector                   
-1                    17                   +                    -                    1_0test.py                    True                 1 2 3 4 5 6 7 8 9 10 11        
-2                    17                   +                    *                    1_1test.py                    True                 1 2 3 4 5 6 7 8 9 10 11        
-3                    17                   +                    /                    1_2test.py                    True                 1 2 3 4 5 6 7 8 9 10 11        
-4                    17                   -                    +                    2_0test.py                    True                 1 2 3 4 5 6 7 8 9 10 11        
-5                    17                   -                    *                    2_1test.py                    True                 1 2 3 4 5 6 7 8 9 10 11        
-6                    17                   -                    /                    2_2test.py                    True                 1 2 3 4 5 6 7 8 9 10 11        
-7                    17                   /                    +                    3_0test.py                    True                 1 2 3 4 5 6 7 8 9 10 11        
-8                    17                   /                    -                    3_1test.py                    True                 0 1 2 3 4 5 6 7 8 0            
-9                    17                   /                    *                    3_2test.py                    True                 0 1 2 3 4 5 6 7 8 0            
-10                   26                   -                    +                    4_0test.py                    True                 1 2 3 4 5 6 7 8 9 10 11        
-11                   26                   -                    *                    4_1test.py                    True                 1 2 3 4 5 6 7 8 9 10 11        
-12                   26                   -                    /                    4_2test.py                    True                 1 2 3 4 5 6 7 8 9 10 11        
-13                   30                   +                    -                    5_0test.py                    True                 1 2 3 4 5 6 7 8 9 10 11        
-14                   30                   +                    *                    5_1test.py                    True                 1 2 3 4 5 6 7 8 9 10 11        
-15                   30                   +                    /                    5_2test.py                    True                 1 2 3 4 5 6 7 8 9 10 11        
-16                   34                   -                    +                    6_0test.py                    True                 1 2 3 4 5 6 7 8 9 10 11        
-17                   34                   -                    *                    6_1test.py                    True                 1 2 3 4 5 6 7 8 9 10 11        
-18                   34                   -                    /                    6_2test.py                    True                 1 2 3 4 5 6 7 8 9 10 11        
-19                   56                   -                    +                    7_0test.py                    True                 1 2 3 4 5 6 7 8 9 10 11        
-20                   56                   -                    *                    7_1test.py                    True                 1 2 3 4 5 6 7 8 9 10 11        
-21                   56                   -                    /                    7_2test.py                    True                 1 2 3 4 5 6 7 8 9 10 11        
-22                   57                   -                    +                    8_0test.py                    True                 1 2 3 4 5 6 7 8 9 10 11        
-23                   57                   -                    *                    8_1test.py                    True                 1 2 3 4 5 6 7 8 9 10 11        
-24                   57                   -                    /                    8_2test.py                    True                 1 2 3 4 5 6 7 8 9 10 11        
-25                   58                   -                    +                    9_0test.py                    True                 1 2 3 4 5 6 7 8 9 10 11        
-26                   58                   -                    *                    9_1test.py                    True                 0 1 2 3 4 5 6 7 8 0            
-27                   58                   -                    /                    9_2test.py                    True                 0 1 2 3 4 5 6 7 8 0            
-28                   64                   -                    +                    10_0test.py                   True                 1 2 3 4 5 6 7 8 9 10 11        
-29                   64                   -                    *                    10_1test.py                   True                 0 1 2 3 4 5 6 7 8 0            
-30                   64                   -                    /                    10_2test.py                   True                 0 1 2 3 4 5 6 7 8 0            
-31                   66                   +                    -                    11_0test.py                   True                 1 2 3 4 5 6 7 8 9 10 5         
-32                   66                   +                    *                    11_1test.py                   True                 0 1 2 3 4 5 6 7 8 0            
-33                   66                   +                    /                    11_2test.py                   True                 0 1 2 3 4 5 6 7 8 0            
-34                   68                   -                    +                    12_0test.py                   True                 1 2 3 4 5 6 7 8 9 10 11        
-35                   68                   -                    *                    12_1test.py                   True                 0 1 2 3 4 5 6 7 8 0            
-36                   68                   -                    /                    12_2test.py                   True                 0 1 2 3 4 5 6 7 8 0            
-Mutant Coverage: 100.0 %
+1                    17                   +                    -                    001test.py                    True                 1 2 3 4 5 6 7 8 9 10 1         
+2                    17                   +                    *                    002test.py                    True                 1 2 3 4 5 6 7 8 9 10 6         
+3                    17                   +                    /                    003test.py                    True                 1 2 3 4 5 6 7 8 9 10 5         
+4                    17                   -                    +                    004test.py                    True                 1 2 3 4 5 6 7 8 9 10 5         
+5                    17                   -                    *                    005test.py                    True                 1 2 3 4 5 6 7 8 9 10 5         
+6                    17                   -                    /                    006test.py                    True                 1 2 3 4 5 6 7 8 9 10 1         
+7                    17                   /                    +                    007test.py                    True                 1 2 3 4 5 6 7 8 9 10 1         
+8                    17                   /                    -                    008test.py                    True                 1 2 3 4 5 6 7 8 9 10 1         
+9                    17                   /                    *                    009test.py                    True                 1 2 3 4 5 6 7 8 9 10 1         
+10                   25                   -                    +                    010test.py                    True                 1 2 3 4 5 6 7 8 9 10 1         
+11                   25                   -                    *                    011test.py                    False                                               
+12                   25                   -                    /                    012test.py                    False                                               
+13                   29                   +                    -                    013test.py                    True                 1 2 3 4 5 6 7 8 9 10 5         
+14                   29                   +                    *                    014test.py                    True                 1 2 3 4 5 6 7 8 9 10 5         
+15                   29                   +                    /                    015test.py                    True                 1 2 3 4 5 6 7 8 9 10 5         
+16                   33                   -                    +                    016test.py                    False                                               
+17                   33                   -                    *                    017test.py                    True                 0 1 2 3 4 5 6 7 8 0            
+18                   33                   -                    /                    018test.py                    True                 0 1 2 3 4 5 6 7 8 0            
+19                   42                   -                    +                    019test.py                    True                 0 1 2 3 4 5 6 7 8 0            
+20                   42                   -                    *                    020test.py                    True                 0 1 2 3 4 5 6 7 8 0            
+21                   42                   -                    /                    021test.py                    True                 0 1 2 3 4 5 6 7 8 0            
+22                   51                   -                    +                    022test.py                    False                                               
+23                   51                   -                    *                    023test.py                    True                 0 1 2 3 4 5 6 7 8 0            
+24                   51                   -                    /                    024test.py                    True                 0 1 2 3 4 5 6 7 8 0            
+25                   57                   -                    +                    025test.py                    True                 1 2 3 4 5 6 7 8 9 10 1         
+26                   57                   -                    *                    026test.py                    True                 0 1 2 3 4 5 6 7 8 0            
+27                   57                   -                    /                    027test.py                    True                 0 1 2 3 4 5 6 7 8 0            
+28                   58                   -                    +                    028test.py                    True                 1 2 3 4 5 6 7 8 9 10 5         
+29                   58                   -                    *                    029test.py                    True                 0 1 2 3 4 5 6 7 8 0            
+30                   58                   -                    /                    030test.py                    True                 0 1 2 3 4 5 6 7 8 0            
+31                   59                   -                    +                    031test.py                    True                 1 2 3 4 5 6 7 8 9 10 11        
+32                   59                   -                    *                    032test.py                    True                 0 1 2 3 4 5 6 7 8 0            
+33                   59                   -                    /                    033test.py                    True                 0 1 2 3 4 5 6 7 8 0            
+34                   62                   -                    +                    034test.py                    True                 1 2 3 4 5 6 7 8 9 10 5         
+35                   62                   -                    *                    035test.py                    True                 0 1 2 3 4 5 6 7 8 0            
+36                   62                   -                    /                    036test.py                    True                 0 1 2 3 4 5 6 7 8 0            
+37                   63                   -                    +                    037test.py                    True                 1 2 3 4 5 6 7 8 9 10 11        
+38                   63                   -                    *                    038test.py                    True                 0 1 2 3 4 5 6 7 8 0            
+39                   63                   -                    /                    039test.py                    True                 0 1 2 3 4 5 6 7 8 0            
+40                   69                   -                    +                    040test.py                    True                 1 2 3 4 5 6 7 8 9 10 1         
+41                   69                   -                    *                    041test.py                    False                                               
+42                   69                   -                    /                    042test.py                    True                 1 2 3 4 5 6 7 8 9 10 1         
+43                   71                   +                    -                    043test.py                    True                 1 2 3 4 5 6 7 8 9 10 1         
+44                   71                   +                    *                    044test.py                    True                 1 2 3 4 5 6 7 8 9 10 1         
+45                   71                   +                    /                    045test.py                    True                 1 2 3 4 5 6 7 8 9 10 1         
+46                   73                   -                    +                    046test.py                    False                                               
+47                   73                   -                    *                    047test.py                    True                 0 1 2 3 4 5 6 7 8 0            
+48                   73                   -                    /                    048test.py                    True                 0 1 2 3 4 5 6 7 8 0            
+Mutant Coverage: 87.5 %

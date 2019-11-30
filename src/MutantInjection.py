@@ -61,8 +61,8 @@ for line in mutantLibrary:
     mutantCounter = 0
     for operator in mutantList:
         #make a copy of the SUT 
-        newProgramPath ='sutFolder/'+ str(libraryLineNumber)+ "_" +str(mutantCounter)+'test.py'
-        mutantFilePath = str(libraryLineNumber)+ "_" +str(mutantCounter)+'test.py'
+        newProgramPath ='sutFolder/'+ str("{:03d}".format(totalMutantCounter))+ 'test.py'
+        mutantFilePath = str("{:03d}".format(totalMutantCounter))+ 'test.py'
         newProgram = open(newProgramPath, "w")
 
         #open the orriginal SUT
@@ -85,8 +85,6 @@ for line in mutantLibrary:
                 totalMutantCounter = totalMutantCounter +1
             else: 
                 newProgram.write(mutantLine)
-
-           
 
         newProgram.close
         mutantCounter = mutantCounter +1
